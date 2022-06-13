@@ -1,0 +1,58 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Title -->
+  <title>Mark's portfolio</title>
+
+  <!-- Required meta tags -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="{% static 'portfolio/style.css' %}">
+
+
+  <!-- icon -->
+  <link rel="shortcut icon" href="{% static 'portfolio/fav.ico' %}" type="image/x-icon">
+
+  <!-- bootstrap -->
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header">
+      <div class="table">
+        <div class="row">
+          <div class="cell"><strong class='white'><a href="{% url 'home' %}">KuraiYoru</a></strong></div>
+          <div class="cell"><span class='white cell-2'><a href="https://github.com/KuraiYoru">GitHub</a></span></div>
+          <div class="cell"><span class='white'><a href="{% url 'team' %}">Team</a></span></div>
+          <div class="cell cell-4"><span class='white'><a href="#">KuraiYoru</a></span></div>
+        </div>
+      </div>
+    </div>
+    <div></div>
+
+    {% block content %}{% endblock %}
+
+    <div class="footer">
+      <div class="mini-footer">
+        <strong class='white'><a href="{% url 'home' %}">KuraiYoru</a></strong>
+      </div>
+      <div class="mini-footer1">
+        <ul>
+          <span>Contacts</span>
+          <li><span class="white"><a href="mailto:artsermark@mail.ru">Mail</a></span></li>
+          <li><span class="white"><a href="https://www.linkedin.com/in/mark-artser-408a10241/">LinkedIn</a></span></li>
+          <li><span class="white"><a href="https://vk.com/meowmooor">Vk</a></span></li>
+
+        </ul>
+      </div>
+    </div>
+
+</body>

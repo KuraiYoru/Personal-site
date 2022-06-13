@@ -1,0 +1,33 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="main">
+  <h1>Hey there. I'm a beginner web-developer</h1>
+  <img src="{% static 'portfolio/Markus.jpg' %}" alt="" style="width: 300px">
+  <h2>My hobbies: </h2>
+
+    {% for project in projects %}
+      <div class="photoes" style="display: inline-block; width: 400px;">
+        <a href="{{ project.url }}" id="BLOG">
+        <img src="{{ project.image.url }}" class="photo">
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.description|truncatechars:100 }}</p>
+        </a>
+      </div>
+    {% endfor %}
+    <br>
+    <a href="{% url 'blog:all_blogs' %}" class="gradient-button">Anime Blog</a>
+    <form action="{% url 'blog:all_blogs' %}" target="_blank">
+      <button class="glow-on-hover">ANIME BLOG!</button>
+    </form>
+
+
+</div>
+
+
+
+
+{% endblock %}
