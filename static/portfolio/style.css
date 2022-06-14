@@ -25,7 +25,11 @@ p {
 }
 
 #BLOG {
+<<<<<<< HEAD
   color: red;
+=======
+  color: #00fbfe;
+>>>>>>> 4599dab1e59b76083e80619121e23186dd41df9f
   text-decoration: none;
   background-color: rgba(0,0,0,0.5);
 }
@@ -204,6 +208,10 @@ a:hover {
 }
 
 .photoes:hover {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4599dab1e59b76083e80619121e23186dd41df9f
   -webkit-transform: translateX(-7px);
   transform: translateX(-7px);
   -webkit-box-shadow: 13px 13px 8px 0px #00fbfe;
