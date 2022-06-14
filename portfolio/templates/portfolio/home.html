@@ -1,12 +1,13 @@
-<<<<<<< HEAD
 {% extends 'portfolio/base.html' %}
-
 {% load static %}
+
+
+
 
 {% block content %}
 
 <div class="main">
-  <h1>Hey there. I'm a beginner web-developer!!!</h1>
+  <h1>Hey there. I'm a beginner web-developer</h1>
   <img src="{% static 'portfolio/Markus.jpg' %}" alt="" style="width: 300px">
   <h2>My hobbies: </h2>
 
@@ -23,46 +24,6 @@
     <form action="{% url 'blog:all_blogs' %}" target="_blank" class='anime-btn'>
       <button class="glow-on-hover">ANIME BLOG!</button>
     </form>
-
-
 </div>
 
-
-
-
 {% endblock %}
-=======
-{% extends 'portfolio/base.html' %}
-
-{% load static %}
-
-{% block content %}
-
-<div class="main">
-  <h1>Hey there. I'm a beginner web-developer</h1>
-    <img src="{% static 'portfolio/Markus.jpg' %}" alt="" style="width: 300px">
-
-  <h2>My hobbies: </h2>
-
-    {% for project in projects %}
-      <div class="photoes" style="display: inline-block; width: 400px;" id="BLOG">
-        <a href="{{ project.url }}" style="color: #00fbfe">
-        <img src="{{ project.image.url }}" class="photo">
-        <h2>{{ project.title }}</h2>
-        <p>{{ project.description|truncatechars:100 }}</p>
-        </a>
-      </div>
-    {% endfor %}
-    <br>
-    <form action="{% url 'blog:all_blogs' %}" target="_blank" class='anime-btn'>
-      <button class="glow-on-hover">ANIME BLOG!</button>
-    </form>
-
-
-</div>
-
-
-
-
-{% endblock %}
->>>>>>> 4599dab1e59b76083e80619121e23186dd41df9f
