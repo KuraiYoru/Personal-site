@@ -10,8 +10,8 @@
   <h2>My hobbies: </h2>
 
     {% for project in projects %}
-      <div class="photoes" style="display: inline-block; width: 400px;">
-        <a href="{{ project.url }}" id="BLOG">
+      <div class="photoes" style="display: inline-block; width: 400px;" id="BLOG">
+        <a href="{{ project.url }}" style="color: #00fbfe">
         <img src="{{ project.image.url }}" class="photo">
         <h2>{{ project.title }}</h2>
         <p>{{ project.description|truncatechars:100 }}</p>
@@ -19,7 +19,7 @@
       </div>
     {% endfor %}
     <br>
-    <form action="{% url 'blog:all_blogs' %}" target="_blank">
+    <form action="{% url 'blog:all_blogs' %}" target="_blank" class='anime-btn'>
       <button class="glow-on-hover">ANIME BLOG!</button>
     </form>
 
