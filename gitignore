@@ -3,11 +3,6 @@
 *.pyc
 __pycache__/
 local_settings.py
-<<<<<<< HEAD
-/static/
-=======
 db.sqlite3
 db.sqlite3-journal
 venv
-
->>>>>>> c94afe28c156368900d8ea8e4ae5873ab0cda9c6

@@ -1,3 +1,5 @@
+{% load static %}
+
 body {
   display: flex;
   flex-direction: column;
@@ -6,6 +8,7 @@ body {
   margin-left: 0;
   font-family: "Bree Serif" serif;
   margin-bottom: 0px;
+  
 }
 
 html {
