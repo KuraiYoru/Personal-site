@@ -2,4 +2,8 @@ asgiref==3.5.0
 Django==4.0.4
 Pillow==8.4.0
 pytz==2022.1
+<<<<<<< HEAD
+=======
+pytz-deprecation-shim==0.1.0.post0
+>>>>>>> 66d9bea60d9b07512ef573135c3c95e30459f5ae
 sqlparse==0.4.2
